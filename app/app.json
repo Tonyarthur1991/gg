@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Daily Roadmap",
+    "slug": "daily-roadmap",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.CHANGEME.dailyroadmap",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "Daily Roadmap reads today's and tomorrow's events to plan your day.",
+        "NSCalendarsFullAccessUsageDescription": "Daily Roadmap reads today's and tomorrow's events to plan your day.",
+        "NSMotionUsageDescription": "Daily Roadmap reads your step count to include activity in your plan.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "plugins": [
+      ["expo-calendar", { "calendarPermission": "Daily Roadmap reads today's and tomorrow's events to plan your day." }],
+      ["expo-sensors", { "motionPermission": "Daily Roadmap reads your step count to include activity in your plan." }],
+      "expo-notifications"
+    ]
+  }
+}
